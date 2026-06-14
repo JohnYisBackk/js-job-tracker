@@ -23,11 +23,9 @@ Job Tracker PRO helps users organize their job search process by tracking applic
 
 ---
 
----
-
 ## 🌐 Live Demo
 
-🔗 
+🔗 [---](https://johnyisbackk.github.io/js-job-tracker/) 
 
 ---
 
