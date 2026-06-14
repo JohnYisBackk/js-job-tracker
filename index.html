@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Job Tracker PRO</title>
+  </head>
+  <body>
+    <main class="career-shell">
+      <header class="career-banner">
+        <div>
+          <p class="banner-chip">Job Tracker PRO</p>
+          <h1>Track your job applications</h1>
+          <p>
+            Manage applications, follow your progress and keep every opportunity
+            organized in one clean workspace.
+          </p>
+        </div>
+      </header>
+
+      <section class="metrics-grid">
+        <article class="metric-card">
+          <span id="totalJobs">0</span>
+          <p>Total Jobs</p>
+        </article>
+
+        <article class="metric-card">
+          <span id="appliedJobs">0</span>
+          <p>Applied</p>
+        </article>
+
+        <article class="metric-card">
+          <span id="interviewJobs">0</span>
+          <p>Interviews</p>
+        </article>
+
+        <article class="metric-card">
+          <span id="offerJobs">0</span>
+          <p>Offers</p>
+        </article>
+
+        <article class="metric-card">
+          <span id="rejectedJobs">0</span>
+          <p>Rejected</p>
+        </article>
+      </section>
+
+      <section class="workspace-layout">
+        <aside class="application-panel">
+          <h2>Add Application</h2>
+
+          <form id="jobForm">
+            <div class="input-group">
+              <label for="companyInput">Company</label>
+              <input
+                type="text"
+                id="companyInput"
+                placeholder="Example: Spotify"
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="positionInput">Position</label>
+              <input
+                type="text"
+                id="positionInput"
+                placeholder="Example: Junior Frontend Developer"
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="statusInput">Status</label>
+              <select id="statusInput">
+                <option value="applied">Applied</option>
+                <option value="interview">Interview</option>
+                <option value="offer">Offer</option>
+                <option value="rejected">Rejected</option>
+              </select>
+            </div>
+
+            <button type="submit">Add Job</button>
+          </form>
+        </aside>
+
+        <section class="jobs-area">
+          <div class="control-panel">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search by company or position..."
+            />
+
+            <div class="status-filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="applied">Applied</button>
+              <button class="filter-btn" data-filter="interview">
+                Interview
+              </button>
+              <button class="filter-btn" data-filter="offer">Offer</button>
+              <button class="filter-btn" data-filter="rejected">
+                Rejected
+              </button>
+            </div>
+          </div>
+
+          <div id="jobsGrid" class="jobs-grid">
+            <!-- Job cards will be rendered here -->
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
