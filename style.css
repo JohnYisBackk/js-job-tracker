@@ -231,7 +231,7 @@ body {
 
 .job-card {
   position: relative;
-  overflow: visible;
+ overflow: hidden;
   padding: 22px;
   border-radius: 28px;
   transition: 0.25s ease;
